@@ -44,7 +44,7 @@ void VCNL4020_SetCurrent(VCNL4020 *sensor, uint8_t led_current)
 void VCNL4020_SetMode(VCNL4020 *sensor, VCNL4020_Mode mode) 
 {
     // Set the sensor's mode
-    sensor->mode = mode;
+    sensor.mode = mode;
 
     /*
     * Check if the mode is valid
