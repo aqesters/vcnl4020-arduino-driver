@@ -2,7 +2,6 @@
 #define VCNL4020_H
 
 #include <stdint.h>
-#include <Arduino.h>
 
 // Registers in VCNL4020 proximity device
 #define ADDRESS_REG00 0X80    // Command register 
@@ -42,7 +41,7 @@ typedef struct
 } VCNL4020;
 
 // Functions for sensor 
-void VCNL4020_Init(VCNL4020 *sensor, uint8_t i2c_address);
+VCNL4020 VCNL4020_Init(uint8_t i2c_address);
 void VCNL4020_SetCurrent(VCNL4020 *sensor, uint8_t current);
 void VCNL4020_SetMode(VCNL4020 *sensor, VCNL4020_Mode mode);
 uint16_t VCNL4020_ReadProximity(VCNL4020 *sensor);
