@@ -1,4 +1,0 @@
-#ifndef PLATFORM_I2C_H
-#define PLATFORM_I2C_H
-
-#endif // PLATFORM_I2C_H
